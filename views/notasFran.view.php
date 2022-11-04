@@ -106,12 +106,12 @@
             <!-- Card Body -->
             <div class="card-body">
                 <!--<form action="./?sec=formulario" method="post">                   -->
-                <form method="post" action="./?sec=iterativas08">
+                <form method="post" action="./?sec=notasFran">
                     <!--<input type="hidden" name="sec" value="iterativas01" />-->
                     <div class="mb-3">
                         <label for="texto">Json Notas:</label>
-                        <textarea class="form-control" id="json_notas" name="json_notas" rows="10"><?php echo isset($data['input']['json_notas']) ? $data['input']['json_notas'] : '';?></textarea>
-                        <p class="text-danger small"><?php echo isset($data['errores']['json_notas']) ? $data['errores']['json_notas'] : ''; ?></p>
+                        <textarea class="form-control" id="json_notas" name="json_notas" rows="10"><?php echo isset($data['input']['json_notas']) ? $data['input']['json_notas'] : ''; ?></textarea>
+                        <p class="text-danger small"><?php echo isset($data['errores']["json_notas"]) ? $data['errores']["json_notas"] : ''; ?></p>
                     </div>                    
                     <div class="mb-3">
                         <input type="submit" value="Enviar" name="enviar" class="btn btn-primary"/>
